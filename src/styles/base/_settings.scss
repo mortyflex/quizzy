@@ -1,6 +1,7 @@
 //COLORS
 $orange: #ffa500;
 $off-white: #f8f8f8;
+$off-black: #333;
 $green: #57b846;
 $red: #ea4355;
 $blue: #1da1f2;
@@ -16,3 +17,14 @@ $xs: 0.5rem;
 
 //BUTTONS RADIUS
 $btnRadius: 15px;
+
+//BREAKPOINTS
+$lg-breakpoint: 1024px;
+$md-breakpoint: 768px;
+$sm-breakpoint: 641px;
+$xs-breakpoint: 480px;
+
+
+
+//BOXSHADOWS
+$shadow: -1px 1px 0px 1px rgba(0, 0, 0, 0.35);

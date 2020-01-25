@@ -19,7 +19,7 @@
         text-align: center;
 
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: $md-breakpoint) {
             width: 95%;
             height: 73%;
 
@@ -46,7 +46,7 @@
         }
 
         a {
-            font-size: $sm;
+            font-size: $md;
             display: block;
             background-color: $green;
             padding: $normal;
@@ -60,7 +60,7 @@
 
         a:hover {
             background-color: darken($green, 7%);
-
+            box-shadow: $shadow;
         }
     }
 
@@ -69,6 +69,7 @@
 
         &:hover {
             background-color: darken($red, 7%);
+            box-shadow: $shadow;
         }
     }
 
@@ -79,6 +80,7 @@
 
         &:hover {
             background-color: darken($blue, 7%);
+            box-shadow: $shadow;
         }
 
     }
@@ -88,7 +90,7 @@
     .auth-container {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: $lg;
 
         a {

@@ -1,0 +1,82 @@
+.instructions {
+    border: 1px solid darken($off-white, 10%);
+    border-radius: 5px;
+    margin: $lg $xs;
+    padding: $sm;
+
+    p {
+        color: $red;
+        text-align: center;
+    }
+
+    h1 {
+        color: $off-black;
+        font-size: $md;
+        text-align: center;
+        margin: $sm;
+    }
+
+    .lifeline {
+        position: relative;
+        top: 3px;
+    }
+
+    .browser-default {
+
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    img {
+
+        margin: $xs;
+        width: 75%;
+        height: 55%;
+    }
+
+    @media (max-width: $md-breakpoint) {
+        img {
+            width: 100% !important;
+            height: 150% !important;
+        }
+
+    }
+
+    .links {
+        font-size: $normal;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            padding: $xs;
+            text-align: center;
+            border-radius: 7px;
+        }
+
+        .left {
+            background-color: $red;
+            transition: all linear 0.3s;
+
+            &:hover {
+                background-color: darken($red, 10%);
+            }
+
+        }
+
+        .right {
+            background-color: $green;
+            transition: all linear 0.3s;
+
+            &:hover {
+                background-color: darken($green, 10%);
+            }
+
+        }
+
+        a {
+
+            text-decoration: none;
+            color: $off-white;
+        }
+    }
+}

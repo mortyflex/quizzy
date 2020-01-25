@@ -11,8 +11,8 @@ const Home = () => (
     </Helmet>
     <div id="home">
       <section>
-        <div>
-          <Icon path={mdiCubeOutline} size={3} color="#000" />
+        <div style={{ marginTop: "2rem" }}>
+          <Icon path={mdiCubeOutline} size={6} color="#FFF" spin={25} />
           <h1>Quizzy App</h1>
           <div className="play-button-container">
             <ul>
@@ -22,8 +22,12 @@ const Home = () => (
             </ul>
           </div>
           <div className="auth-container">
-            <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>
+            <Link id="login-button" to="/login">
+              Login
+            </Link>
+            <Link id="register-button" to="/register">
+              Register
+            </Link>
           </div>
         </div>
       </section>

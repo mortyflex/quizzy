@@ -1,0 +1,111 @@
+#home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../../assets/img/quizzyBG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    section {
+        height: 55%;
+        width: 45%;
+        padding: 0 $md;
+        margin: auto;
+        background-color: rgba(236, 204, 104, 0.3);
+        border-radius: 7px;
+        text-align: center;
+
+
+        @media screen and (max-width: 800px) {
+            width: 95%;
+            height: 73%;
+
+        }
+
+    }
+
+
+
+    h1 {
+        text-align: center;
+        font-size: $lg;
+        font-weight: bold;
+        color: $off-white;
+    }
+
+    .play-button-container {
+        margin-top: $lg;
+        width: 100%;
+
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            font-size: $sm;
+            display: block;
+            background-color: $green;
+            padding: $normal;
+            border-radius: $btnRadius;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all linear 0.3s;
+        }
+
+        a:hover {
+            background-color: darken($green, 7%);
+
+        }
+    }
+
+    #login-button {
+        background-color: $red;
+
+        &:hover {
+            background-color: darken($red, 7%);
+        }
+    }
+
+
+
+    #register-button {
+        background-color: $blue;
+
+        &:hover {
+            background-color: darken($blue, 7%);
+        }
+
+    }
+
+
+
+    .auth-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: $lg;
+
+        a {
+            color: #FFF;
+            font-size: $sm;
+            border-radius: $btnRadius;
+            cursor: pointer;
+            padding: $normal 0;
+            width: 45%;
+            text-align: center;
+            text-decoration: none;
+            transition: all linear 0.3s;
+        }
+
+        a:hover {
+            background-color: darken($green, 7%);
+        }
+    }
+
+}

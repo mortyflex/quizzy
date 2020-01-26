@@ -55,7 +55,7 @@
 
         .left {
             background-color: $red;
-            transition: all linear 0.3s;
+            transition: $transition;
 
             &:hover {
                 background-color: darken($red, 10%);
@@ -65,7 +65,7 @@
 
         .right {
             background-color: $green;
-            transition: all linear 0.3s;
+            transition: $transition;
 
             &:hover {
                 background-color: darken($green, 10%);

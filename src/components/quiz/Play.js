@@ -13,39 +13,36 @@ const Play = () => {
         <title>Quiz page</title>
       </Helmet>
       <div className="questions">
+        <h2>Quiz Mode</h2>
         <div className="lifeline-container">
           <p>
             <Icon
-              style={{ position: "relative", top: "3px" }}
               className="lifeline-icon"
               path={mdiSetCenter}
               size={1}
               spin={5}
               color="#57b846"
             />
-            2
+            <span className="lifeline">2</span>
           </p>
           <p>
             <Icon
-              style={{ position: "relative", top: "3px" }}
               className="lifeline-icon"
               path={mdiLightbulbOnOutline}
               size={1}
               spin={5}
               color="#57b846"
             />
-            2
+            <span className="lifeline">5</span>
           </p>
         </div>
         <div>
           <p>
-            <span>1 of 15</span>
-            <Icon
-              style={{ position: "relative", top: "3px" }}
-              path={mdiClockOutline}
-              size={1}
-            />
-            2:15
+            <span className="left">1 of 15</span>
+            <span style={{ float: "right" }}>
+              <Icon path={mdiClockOutline} size={1} />
+              2:15
+            </span>
           </p>
         </div>
         <h4>Google was founded in what year ?</h4>
@@ -57,7 +54,7 @@ const Play = () => {
           <p className="option">1999</p>
           <p className="option">2000</p>
         </div>
-        <div className="bottom-container">
+        <div className="button-container">
           <button>Previous</button>
           <button>Next</button>
           <button>Quit</button>

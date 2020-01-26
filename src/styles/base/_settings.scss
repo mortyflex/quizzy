@@ -17,6 +17,7 @@ $xs: 0.5rem;
 
 //BUTTONS RADIUS
 $btnRadius: 15px;
+$btnRadiusSm: 9px;
 
 //BREAKPOINTS
 $lg-breakpoint: 1024px;
@@ -28,3 +29,7 @@ $xs-breakpoint: 480px;
 
 //BOXSHADOWS
 $shadow: -1px 1px 0px 1px rgba(0, 0, 0, 0.35);
+$shadowBtn: -1px 1px 0px 1px rgba(112, 109, 243, 0.35);
+
+//TRANSITION
+$transition: all linear 0.3s;

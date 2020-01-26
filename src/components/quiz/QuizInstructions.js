@@ -7,7 +7,7 @@ import fiftyFifty from "../../assets/img/fiftyFifty.png";
 import hints from "../../assets/img/hints.png";
 import options from "../../assets/img/options.png";
 import Icon from "@mdi/react";
-import { mdiSetCenter, mdiLightbulb } from "@mdi/js";
+import { mdiSetCenter, mdiLightbulbOnOutline } from "@mdi/js";
 
 const QuizInstructions = () => (
   <>
@@ -61,7 +61,7 @@ const QuizInstructions = () => (
           Using a hint by clicking the icon
           <Icon
             className="lifeline"
-            path={mdiLightbulb}
+            path={mdiLightbulbOnOutline}
             size={1}
             color="#57b846"
           />

@@ -12,7 +12,7 @@ const Home = () => (
     <div id="home">
       <section>
         <div style={{ marginTop: "2rem" }}>
-          <Icon path={mdiCubeOutline} size={6} color="#FFa500" spin={25} />
+          <Icon path={mdiCubeOutline} size={6} color="#FFa500   " spin={25} />
           <h1>Quizzy App</h1>
           <div className="play-button-container">
             <ul>

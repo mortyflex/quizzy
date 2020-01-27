@@ -30,11 +30,20 @@
         margin: $lg;
         line-height: 1.5;
         text-align: center;
+
+        @media screen and (max-width: $md-breakpoint) {
+            margin: $sm auto;
+        }
     }
 
     .options-container {
         display: inline-block;
         width: 50%;
+
+        @media screen and (max-width: $md-breakpoint) {
+            width: 100%;
+
+        }
 
 
 
@@ -50,19 +59,28 @@
             cursor: pointer;
             transition: $transition;
 
+            @media screen and (max-width: $md-breakpoint) {
+                margin: $xs auto;
+            }
+
 
             &:hover {
                 background-color: darken($blue, 20%);
             }
+
+
         }
     }
 
     .button-container {
         display: flex;
         justify-content: flex-end;
-        margin: 0 auto $xs auto;
-        width: 80%;
 
+
+        @media screen and (max-width: $md-breakpoint) {
+            justify-content: center;
+
+        }
 
         button {
             border: none;
@@ -111,4 +129,22 @@
         }
     }
 
+
+
+
+}
+
+.toast-valid {
+
+    background-color: $success-text;
+    padding: $xs;
+    border-radius: 5px !important;
+    color: $off-white !important;
+}
+
+.toast-invalid {
+    background-color: $error-text;
+    padding: $xs;
+    border-radius: 5px !important;
+    color: $off-white !important;
 }
